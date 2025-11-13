@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  scrollbar-color: theme(colors.slate.400) transparent;
+}
+
+body {
+  @apply bg-slate-100 text-slate-900 font-sans;
+}
+
+::selection {
+  @apply bg-emerald-300 text-emerald-950;
+}
